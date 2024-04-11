@@ -144,7 +144,7 @@ class Intervenant
     }
 
     /**
-     * Modifie l'identifiant de l'organisation
+     *   l'identifiant de l'organisation
      *
      * @param  mixed $fk_id_org
      * @param  mixed $this-

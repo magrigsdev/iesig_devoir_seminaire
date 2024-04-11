@@ -20,3 +20,12 @@ spl_autoload_register(
 );
 
 HomeControllers::Home();
+
+//var_dump(ModelsUtilisateurs::getLogin("elian","0000"));
+var_dump(ModelsUtilisateurs::CheckLogin("elian", "0000"));
+//var_dump(Models::getItem("organisateurs","id_org",2));CheckLogin
+
+
+
+
+

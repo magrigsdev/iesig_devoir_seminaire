@@ -28,7 +28,7 @@ class Annonce
      * @param  mixed $this-
      * @return void l'identifiant de l'intervenant
      */
-    public function getIdInter()
+    public function getIdInter():int
     {
         return $this->id_inter;
     }
@@ -39,7 +39,7 @@ class Annonce
      * @param  mixed $this-
      * @return void l'identifiant de l'evenement
      */
-    public function getIdEvent()
+    public function getIdEvent():int
     {
         return $this->id_event;
     }
@@ -50,7 +50,7 @@ class Annonce
      * @param  mixed $this-
      * @return void date de l'intervenant
      */
-    public function getDateInter()
+    public function getDateInter():string
     {
         return $this->date_inter;
     }
@@ -61,7 +61,7 @@ class Annonce
      * @param  mixed $this-
      * @return void date de la mise à jour 
      */
-    public function getDateMiseAJour()
+    public function getDateMiseAJour(): string
     {
         return $this->date_mise_a_jour;
     }

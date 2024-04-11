@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>elian event</title>
 </head>
 
 <body>
@@ -42,41 +42,36 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-5 col-md-8">
-                            <h2 class="mb-3 text-white col d-flex justify-content-center"> <span class="text-primary">- </span>elian event<span class="text-primary">-</span></h2>
-                            <form class="bg-white rounded shadow-5-strong p-5">
+                            <h2 class="mb-1 text-white col d-flex justify-content-center"> <span class="text-primary">-
+                                </span>elian event<span class="text-primary">-</span></h2>
+                                <h5 class="mb-3 text-white col d-flex justify-content-center"> Bienvenue </h5>
+                            <form class="bg-white rounded shadow-5-strong p-5" method="POST" action="?action=choix">
                                 <!-- Email input -->
                                 <div class="form-outline mb-4" data-mdb-input-init>
-                                    <input type="email" id="form1Example1" class="form-control" />
-                                    <label class="form-label" for="form1Example1">Email </label>
+                                    <input type="text" id="form1Example1" class="form-control" placeholder="identifiant"
+                                        name="identifiant" />
+                                    <!-- <label class="form-label" for="form1Example1">Email </label> -->
                                 </div>
 
                                 <!-- Password input -->
                                 <div class="form-outline mb-4" data-mdb-input-init>
-                                    <input type="password" id="form1Example2" class="form-control" />
-                                    <label class="form-label" for="form1Example2">Password</label>
+                                    <input type="password" id="form1Example2" class="form-control"
+                                        placeholder="password" name="password" />
+                                    <!-- <label class="form-label" for="form1Example2">Password</label> -->
                                 </div>
 
                                 <!-- 2 column grid layout for inline styling -->
                                 <!-- <div class="row mb-4">
-                                    <div class="col d-flex justify-content-center">
-                                       
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="form1Example3"
-                                                checked />
-                                            <label class="form-check-label" for="form1Example3">
-                                                Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-
                                     <div class="col text-center">
-                                       
-                                        <a href="#!">Forgot password?</a>
+                                        <a type="button" href="?action=creation"  class="btn btn-outline-primary" >
+                                            Créer un compte
+                                        </a>                                      
                                     </div>
                                 </div> -->
 
                                 <!-- Submit button -->
-                                <button type="submit" class="btn btn-primary btn-block" data-mdb-ripple-init>Connection</button>
+                                <button type="submit" class="btn btn-primary btn-block"
+                                    data-mdb-ripple-init>Connection</button>
                             </form>
                         </div>
                     </div>
@@ -87,13 +82,15 @@
     </header>
     <!--Main Navigation-->
 
+
+
     <!--Footer-->
-    <footer class="bg-light text-lg-start">
-        
+    <footer class="bg-white text-lg-start">
+
         <hr class="m-0" />
 
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center p-3" style="background-color: white;">
             © 2024 Copyright:
             <a class="text-dark" href="https://mdbootstrap.com/">Frid Banzouzi</a>
         </div>

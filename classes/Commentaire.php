@@ -26,7 +26,7 @@ class Commentaire
      *
      * @return int identifiant de l'événement
      */
-    public function getIdEvent()
+    public function getIdEvent(): int
     {
         return $this->id_event;
     }
@@ -36,7 +36,7 @@ class Commentaire
      *
      * @return int l'identifiant du participant
      */
-    public function getIdPart()
+    public function getIdPart(): int
     {
         return $this->id_part;
     }
@@ -46,7 +46,7 @@ class Commentaire
      *
      * @return string commentaire
      */
-    public function getCom()
+    public function getCom(): string
     {
         return $this->com;
     }
