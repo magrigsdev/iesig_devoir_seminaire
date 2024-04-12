@@ -45,7 +45,7 @@
                             <h2 class="mb-1 text-white col d-flex justify-content-center"> <span class="text-primary">-
                                 </span>elian event<span class="text-primary">-</span></h2>
                                 <h5 class="mb-3 text-white col d-flex justify-content-center"> Bienvenue </h5>
-                            <form class="bg-white rounded shadow-5-strong p-5" method="POST" action="?action=choix">
+                            <form class="bg-white rounded shadow-5-strong p-5" method="POST" action="?action=checklogin">
                                 <!-- Email input -->
                                 <div class="form-outline mb-4" data-mdb-input-init>
                                     <input type="text" id="form1Example1" class="form-control" placeholder="identifiant"
@@ -56,7 +56,7 @@
                                 <!-- Password input -->
                                 <div class="form-outline mb-4" data-mdb-input-init>
                                     <input type="password" id="form1Example2" class="form-control"
-                                        placeholder="password" name="password" />
+                                        placeholder="password" name="mdp" />
                                     <!-- <label class="form-label" for="form1Example2">Password</label> -->
                                 </div>
 

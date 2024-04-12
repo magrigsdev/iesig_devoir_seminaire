@@ -12,10 +12,34 @@ class HomeControllers{
             include "views/viewIndex.php";
         }
 
-        if ($_GET['choix']) {
-            include "views/vieworganisateurs.php";
-            # code...
+        if(isset($_GET['action'])){
+            $url = $_GET['action'];
+            switch ($url) {
+                case 'checklogin':
+                    # code...
+                    
+                    $user = htmlspecialchars_decode($_POST["identifiant"]);
+                    $mdp = htmlspecialchars_decode($_POST["mdp"]);
+                    $check = ModelsUtilisateurs::CheckLogin($user, $mdp);
+                   
+                    if ($check) {
+                        include "views/vieworganisateurs.php";
+                    } else {
+                        $_GET['action'] = "";
+                        header("location: ");
+                    
+                    }
+                    break;
+
+                default:
+                    # code...
+                    break;
+            }
         }
+        
+
+
+
     }
 
 }

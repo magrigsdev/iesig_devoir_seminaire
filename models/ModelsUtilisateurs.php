@@ -4,7 +4,15 @@ class ModelsUtilisateurs extends Models{
 
     static function CheckLogin($identifiant, $mdp){
         //$datum = ModelsUtilisateurs::getLogin($identifiant, $mdp);
+        $users = Models::getItems("utilisateurs");
 
+        foreach ($users as $user) {
+
+            if($identifiant == $user['identifiant'] && $mdp == $user['mdp']){
+                return true;
+            }
+        }
+        return false; 
     }
 
     
