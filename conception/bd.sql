@@ -22,9 +22,11 @@ CREATE TABLE evenement(
    resume VARCHAR(50),
    lieu VARCHAR(50),
    titre VARCHAR(50),
-    fk_id_org INT,
+   fk_id_org INT NULL,
    PRIMARY KEY(id_event),
-   FOREIGN KEY(fk_id_org) REFERENCES organisateurs(id_org)
+   fk_id_inter INT NULL,
+   FOREIGN KEY(fk_id_org) REFERENCES organisateurs(id_org),
+   FOREIGN KEY(fk_id_inter) REFERENCES intervenant(id_inter)
 )ENGINE=InnoDB;
 
 CREATE TABLE annonce(

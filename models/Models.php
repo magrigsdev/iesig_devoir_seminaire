@@ -46,6 +46,23 @@ class Models{
 
         return $stat->fetch();
     }
+    static function getItemsByAll($table, $champs, $idItem)
+    {
+        $idItem = intval($idItem);
+        $pdo = Models::bd();
+        $sql = "SELECT * FROM " . $table . " WHERE " . $champs . "= :id";
+        $stat = $pdo->prepare($sql);
+        $stat->execute([
+            "id" => $idItem
+        ]);
+
+        //si le tableau est vide il renvoie : false
+        // if(!$stat->fetch()) {
+        //     return false;
+        // } 
+
+        return $stat->fetchAll();
+    }
     
     /**
      * delItem

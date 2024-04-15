@@ -9,7 +9,7 @@ class HomeControllers{
      */
     static function Home(){
         if(empty($_GET)){
-            include "views/viewIndex.php";
+            include "views/vieworganisateurs.php";
         }
 
         if(isset($_GET['action'])){
@@ -30,7 +30,11 @@ class HomeControllers{
                     
                     }
                     break;
-
+                case 'list_sem':
+                    //var_dump($_GET['action'] . " ---- " . $_GET['id']);
+                    
+                    include "views/list_sem.php";
+                    break;
                 default:
                     # code...
                     break;
